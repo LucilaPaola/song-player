@@ -37,7 +37,7 @@ export default function App() {
 
   return (
     <main>
-      <h1 style={{ textAlign: "center" }}>🎵 Reproductor de Canciones</h1>
+      <h1 style={{ textAlign: "center" }}>🎶 Reproductor de Canciones</h1>
       <AddSongForm songs={songs} onAdd={addSong} />
       <button onClick={() => setDarkMode(!darkMode)}>
         Modo {darkMode ? "Claro" : "Oscuro"}

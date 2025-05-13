@@ -4,14 +4,12 @@ export default function ModalPlayer({ url, onClose }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Activar animación de entrada
     setVisible(true);
   }, []);
 
   const handleClose = () => {
-    // Animación de salida
     setVisible(false);
-    setTimeout(onClose, 300); // Esperar que termine la animación
+    setTimeout(onClose, 300); 
   };
 
   const embedUrl = url.replace("watch?v=", "embed/");
